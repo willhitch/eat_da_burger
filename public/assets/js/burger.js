@@ -18,7 +18,7 @@ $(function () {
     })
   })
 
-  $(".creat-form").on("submit", function (event) {
+  $(".create-form").on("submit", function (event) {
     event.preventDefault()
 
     var isDevoured
@@ -33,7 +33,7 @@ $(function () {
     }
 
     $.ajax("/api/burgers", {
-      type: "PUT",
+      type: "POST",
       data: burger,
     }).then(function (res) {
       console.log(res)
