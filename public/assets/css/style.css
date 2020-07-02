@@ -2,3 +2,7 @@ li {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+
+.strike li {
+  text-decoration: line-through;
+}
